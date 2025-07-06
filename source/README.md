@@ -31,9 +31,9 @@ A teljes Újszövetségi igék összes alakja szerepel. A kódok az előfordulá
 
 Az igék az alábbi formák egyikében szerepelnek:
 
-1. V-időmód-nem
-2. V-időmód-nem-személy-szám
-3. V-időmód-nem-eset-szám-nem
+1. V-idő-mód-nem
+2. V-idő-mód-nem-személy-szám
+3. V-idő-mód-nem-eset-szám-nem
 
 ### Rövidítések
 
