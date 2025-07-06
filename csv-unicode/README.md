@@ -1,5 +1,6 @@
-# Unicode versions of the Byzantine text in `.csv` format
+# A bizánci szöveg Unicode változatai `.csv` formátumban
 
-This folder contains Unicode versions of the original `.CCAT` and `.BP5` files produced by Prof. Robinson. The `.csv` files in this folder are provided to you merely as a convenience. Professor Robinson's files remain the ultimate source of truth.
+Ez a mappa Prof. Robinson által készített eredeti `.CCAT` és `.BP5` fájlok Unicode változatait tartalmazza.  
+A mappában található `.csv` fájlokat pusztán kényelmi célból bocsátjuk rendelkezésedre – **Robinson professzor eredeti fájljai maradnak a hiteles forrás**.
 
-The scripts used to convert the files to the Unicode `.csv`s are in the `scripts` folder (see that folder's `README` for details).
+A fájlok Unicode `.csv` formátumra való átalakításához használt szkriptek a `scripts` mappában találhatók (a részleteket lásd az adott mappa `README` fájljában).
