@@ -1,25 +1,30 @@
-# TEI-XML files of the Byzantine Textform
+# A Bizánci Szövegforma TEI-XML fájljai
 
-This folder contains XML files of the entire New Testament (inside the `BYZ` subfolder) and of each book. These files *do not contain accents nor variants*. They represent the main text of the Byzantine Textform.
+Ez a mappa az Újszövetség teljes szövegét tartalmazza XML-formátumban (a `BYZ` almappában), valamint könyvenként is.  
+Ezek a fájlok **nem tartalmaznak ékezeteket és szövegvariánsokat** – kizárólag a Bizánci Szövegforma főszövegét képviselik.
 
-The files are converted with a script in the `scripts` folder (see there for more details). The source files are in the `source/Strongs` folder.
+A fájlokat egy szkript konvertálja, amely a `scripts` mappában található (lásd ott a részleteket).  
+A forrásfájlok a `source/Strongs` mappában vannak.
 
-## Using CollateX
+## A CollateX használata
 
-You can download the CollateX software from this URL https://collatex.net/download/
- 
-Let's suppose you want to compare P66 with the Byzantine text of John 1. You can get the transcription of P66 from the INTF here  https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=10066&indexContent=John%201&pageID=ALL&format=teiraw  and the Byzantine text in the present folder.
+A CollateX szoftver letölthető erről az oldalról:  
+https://collatex.net/download/
 
-For this demo, we prepared a TEI file with only the first chapter of the Byzantine John. You can find it [here](assets/demo_john_1.xml) (if you try to run CollateX on the entire book, it will take some time.)
+Tegyük fel, hogy össze szeretnéd hasonlítani a P66 kódexet a János evangéliuma 1. fejezetének bizánci szövegével.  
+A P66 transzkripciója letölthető innen (az INTF adatbázisból):  
+https://ntvmr.uni-muenster.de/community/vmr/api/transcript/get/?docID=10066&indexContent=John%201&pageID=ALL&format=teiraw
 
-Save the files. For example: `p66.xml` and `demo_john_1.xml`.
- 
-Then run CollateX with the following command
+A Bizánci szöveg itt, ebben a mappában található.
+
+Ehhez a bemutatóhoz előkészítettünk egy TEI-fájlt, amely csak a János 1. fejezetet tartalmazza.  
+Ez megtalálható itt: [demo_john_1.xml](assets/demo_john_1.xml)  
+(Ha a teljes könyvön próbálod futtatni a CollateX-et, az sok időt vehet igénybe.)
+
+Mentsd le a fájlokat például `p66.xml` és `demo_john_1.xml` néven.
+
+Ezután futtasd a CollateX-et az alábbi paranccsal:
 
 ```bash
 java -jar collatex-tools-1.7.1.jar -xp '//w' -xml -f csv -t demo_john_1.xml p66.xml > collation.csv
-```
 
-The [resulting file](assets/demo_collation.xlsx) (with a little bit of Excel formatting) looks like this:
-
-![](assets/coll.png)
