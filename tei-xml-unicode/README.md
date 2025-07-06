@@ -28,3 +28,4 @@ Ezután futtasd a CollateX-et az alábbi paranccsal:
 ```bash
 java -jar collatex-tools-1.7.1.jar -xp '//w' -xml -f csv -t demo_john_1.xml p66.xml > collation.csv
 
+![](assets/coll.png)
